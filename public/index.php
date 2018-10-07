@@ -5,7 +5,7 @@ class main  {
         $records = csv::getRecords($filename);
         $table = html::generateTable($records);
     }
-}
+}  
 class html {
     public static function generateTable($records) {
         $count = 0;
