@@ -1,5 +1,4 @@
 <?php
-
 main::start("example.csv");
 class main  {
     static public function start($filename) {
@@ -63,7 +62,6 @@ class record {
         $this->{$name} = $value;
     }
 }
-
 class recordFactory {
     public static function create(Array $fieldNames = null, Array $values = null) {
         $record = new record($fieldNames, $values);
